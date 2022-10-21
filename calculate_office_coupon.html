@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>office_coupon</title>
+    <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/assets/css/common.css">
+    <script src="/assets/js/common.js"></script>
+</head>
+<body>
+    <article>
+        <nav>
+            <img class="logo" src="/assets/images/common/logo.svg" alt="banapresso">
+            <div class="user">
+                <p><span class="name">홍길동</span>님</p>
+                <p>안녕하세요.</p>
+            </div>
+            <div class="select-spot">
+                <select name="spot">
+                    <option value="">충무로점</option>
+                    <option value="">대학로점</option>
+                </select>
+            </div>
+            <ul class="menu-list">
+                <li class="list-item"><a class="menu" href="">HOME</a></li>
+                <li class="list-item"><a class="menu" href="">공지사항</a></li>
+                <li class="list-item"><a class="menu" href="">자료실</a></li>
+                <li class="list-item depth active">
+                    <span class="menu">정산관리</span>
+                    <ul class="depth-list">
+                        <li><a href="">정산내역 확인</a></li>
+                        <li><a href="">유상포인트 결제내역</a></li>
+                        <li class="active"><a href="">본사 쿠폰 결제내역</a></li>
+                        <li><a href="">고객 클레임 보상내역</a></li>
+                        <li><a href="">기타 정산 내역</a></li>
+                    </ul>
+                </li>
+                <li class="list-item"><a class="menu" href="">기타내역</a></li>
+                <li class="list-item depth"><span class="menu">매출관리</span></li>
+                <li class="list-item depth"><span class="menu">멤버십현황</span></li>
+            </ul>
+            <div class="user-function">
+                <p><a href="">로그아웃</a></p>
+                <p><a href="">비밀번호 변경</a></p>
+            </div>
+        </nav>
+        <section class="container">
+            <header>
+                <div class="page-title calculate">
+                    <p class="present">정산관리</p>
+                    <p class="spot">본사 쿠폰 결제내역</p>
+                </div>    
+            </header>
+            <section class="contents-wrap paid-point-wrap">
+                <div class="contents">
+                    <div class="info-wrap">
+                        <p>※ 본사에서 비용을 부담하는 쿠폰의 결제내역을 조회 가능 합니다. (가맹점 비용 부담인 월간랭킹쿠폰, 스탬프적립쿠폰 등은 제외)</p>
+                    </div>
+                    <div class="fixed-paid-point-wrap">
+                        <p class="title bullet">2022년 3월 본사 쿠폰 결제 내역</p>
+                        <table class="board-wrap"  cellpadding="0" cellspacing="0">
+                            <colgroup>
+                                <col width="218">
+                                <col width="*">
+                                <col width="130">
+                                <col width="130">
+                                <col width="130">
+                            </colgroup>       
+                            <tr>
+                                <th>정산기간</th>
+                                <th>품목</th>
+                                <th>공급가액</th>
+                                <th>부가세</th>
+                                <th>합계</th>
+                            </tr>
+                            <tr>
+                                <td class="align-center">22/06/01~22/06/30</td>
+                                <td class="align-left">본사가 발행하는 이벤트/프로모션/서비스 쿠폰 등의 고객 사용비용 보전</td>
+                                <td class="align-right">100,000</td>
+                                <td class="align-right">10,00</td>
+                                <td class="align-right">110,000</td>
+                            </tr>
+                        </table>
+                        <p class="title bullet">상세내역</p>
+                        <div class="search-wrap">
+                            <div class="input-wrap">
+                                <input type="text" placeholder="2022-03-01">
+                                <i>~</i>
+                                <input type="text" placeholder="2022-03-30">
+                            </div>
+                            <div class="select-wrap">
+                                <select name="" id="">
+                                    <option value="">포인트 구분 전체</option>
+                                </select>
+                                <select name="" id="">
+                                    <option value="">거래기기 전체</option>
+                                </select>
+                            </div>
+                            <button class="btn-search">조회</button>
+                        </div>
+                        <div class="search-result-wrap">
+                            <div class="search-date">
+                                <p>조회기간: 2022-12-31 ~ 2022-12-31</p>
+                            </div>
+                            <ul class="search-result">
+                                <li>출석 이벤트 쿠폰&nbsp;:&nbsp;<span class="value">10,000원</span></li>
+                                <li>밀크티 트립 스탬프 이벤트 쿠폰&nbsp;:&nbsp;<span class="value">10,000원</span></li>
+                                <li>어플 설치 1500원 할인 쿠폰:<span class="value">10,000원</span></li>
+                                <li>고객 클레임 서비스 쿠폰:<span class="value">10,000원</span></li>
+                                <li>기타 본사 서비스 쿠폰:<span class="value">10,000원</span></li>
+                                <li>본사 쿠폰 사용금액 합계:<span class="value">10,000원</span></li>
+                            </ul>
+                        </div>
+                        <table class="board-wrap"  cellpadding="0" cellspacing="0">
+                            <colgroup>
+                                <col width="188">
+                                <col width="393">
+                                <col width="262">
+                                <col width="116">
+                                <col width="134">
+                                <col width="136">
+                                <col width="136">
+                                <col width="136">
+                                <col width="136">
+                            </colgroup>       
+                            <tr>
+                                <th rowspan="2">결제일시</th>
+                                <th rowspan="2">쿠폰</th>
+                                <th rowspan="2">사용메뉴</th>
+                                <th rowspan="2">쿠폰 사용금액</th>
+                                <th rowspan="2">거래기기</th>
+                                <th rowspan="2">주문자</th>
+                                <th colspan="3" class="price-area">본사발행 쿠폰 결제내역</th>
+                            </tr>
+                            <tr>
+                                <td class="price-area">공급가</td>
+                                <td class="price-area">부가세</td>
+                                <td class="price-area">합계</td>
+                            </tr>
+                            <tr>
+                                <td class="align-center">22/06/01~22/06/30</td>
+                                <td class="align-left">출석 이벤트 쿠폰</td>
+                                <td class="align-left">아메리카노</td>
+                                <td class="align-right">13,000</td>
+                                <td class="align-center">어플</td>
+                                <td class="align-center">0101234****</td>
+                                <td class="align-right">130,000</td>
+                                <td class="align-right">130,000</td>
+                                <td class="align-right"><strong>130,000</strong></td>
+                            </tr>
+                            <tr>
+                                <td class="align-center">22/06/01~22/06/30</td>
+                                <td class="align-left">밀크티 트립 스탬프 이벤트 쿠폰</td>
+                                <td class="align-left">아메리카노</td>
+                                <td class="align-right">13,000</td>
+                                <td class="align-center">어플</td>
+                                <td class="align-center">0101234****</td>
+                                <td class="align-right">130,000</td>
+                                <td class="align-right">130,000</td>
+                                <td class="align-right"><strong>130,000</strong></td>
+                            </tr>
+                            <tr>
+                                <td class="align-center">22/06/01~22/06/30</td>
+                                <td class="align-left">어플 설치 1500원 할인 쿠폰</td>
+                                <td class="align-left">아메리카노</td>
+                                <td class="align-right">13,000</td>
+                                <td class="align-center">키오스크</td>
+                                <td class="align-center">0101234****</td>
+                                <td class="align-right">130,000</td>
+                                <td class="align-right">130,000</td>
+                                <td class="align-right"><strong>130,000</strong></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="result-function-wrap">
+                        <div class="function">
+                            <button class="goast-btn">엑셀다운</button>
+                        </div>
+                        <div class="paging-wrap">
+                            <button class="btn-prev"></button>
+                            <ul class="paging">
+                                <li class="active">1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+                            </ul>
+                            <button class="btn-next"></button>
+                        </div>
+                        <select class="filter-number" name="" id="">
+                            <option value="">50개</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <div class="alert-layer modify-layer">
+            <div class="msg-wrap">
+                <p class="title">수정요청</p>
+                <textarea class="text-area" name="" id="" placeholder="수정 요청하실 품목과 금액 등 자세한 내용을 입력해주세요."></textarea>
+                <button class="btn-close modify-close"></button>
+                <button class="cta-btn">등록하기</button>
+            </div>
+        </div>
+        <div class="alert-layer history-layer">
+            <div class="msg-wrap">
+                <p class="title">수정요청/변경이력</p>
+                <table class="board-wrap" cellpadding="0" cellspacing="0">
+                    <colgroup>
+                        <col width="130">
+                        <col width="98">
+                        <col width="98">
+                        <col width="372">
+                        <col width="250">
+                        <col width="250">
+                    </colgroup>
+                    <tr>
+                        <th>일시</th>
+                        <th>구분</th>
+                        <th>등록자</th>
+                        <th>수정요청/답변내용</th>
+                        <th>변경 전</th>
+                        <th>변경 후</th>
+                    </tr>
+                    <tr>
+                        <td>2022-12-31 12:30</td>
+                        <td>본사등록</td>
+                        <td>홍길동<br>(충무로점)</td>
+                        <td>확인결과 유상포인트 금액 문제없습니다.</td>
+                        <td class="content">
+                            <strong>
+                                [유상포인트] 충전/잔돈포인트
+                                고객사용내역 보전
+                            </strong>
+                            <p>합계: 1,100원</p>
+                            <p>공급가액: 1,000원</p>
+                            <p>부가세: 100원</p>
+                            <br>
+                            <strong>
+                                [본사 쿠폰] 본사 서비스 쿠폰
+                                고객 사용내역 보전
+                            </strong>
+                            <p>합계: 1,100원</p>
+                        </td>
+                        <td class="content">
+                            <strong>
+                                [유상포인트] 충전/잔돈포인트
+                                고객사용내역 보전
+                            </strong>
+                            <p>합계: 1,100원</p>
+                            <p>공급가액: 1,000원</p>
+                            <p>부가세: 100원</p>
+                            <br>
+                            <strong>
+                                [본사 쿠폰] 본사 서비스 쿠폰
+                                고객 사용내역 보전
+                            </strong>
+                            <p>합계: 1,100원</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2022-12-31 12:30</td>
+                        <td>본사등록</td>
+                        <td>본사</td>
+                        <td>확인결과 유상포인트 금액 문제없습니다.</td>
+                        <td class="content">
+                            <strong>[본사 쿠폰] 본사 서비스 쿠폰 고객 사용내역 보전</strong>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>2022-12-31 12:30</td>
+                        <td>본사등록</td>
+                        <td>본사</td>
+                        <td>확인결과 유상포인트 금액 문제없습니다.</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>2022-12-31 12:30</td>
+                        <td>본사등록</td>
+                        <td>본사</td>
+                        <td>확인결과 유상포인트 금액 문제없습니다.</td>
+                        <td></td>
+                        <td class="content">
+                            <strong>[본사 쿠폰] 본사 서비스 쿠폰 고객 사용내역 보전</strong>
+                        </td>
+                    </tr>
+                </table>
+                <button class="btn-close history-close"></button>
+                <button class="cta-btn">등록하기</button>
+            </div>
+        </div>
+    </article>
+</body>
+</html>

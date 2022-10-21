@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculate</title>
+    <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/assets/css/common.css">
+    <script src="/assets/js/menu.js"></script>
+</head>
+<body>
+    <article>
+        <nav>
+            <img class="logo" src="/assets/images/common/logo.svg" alt="banapresso">
+            <div class="user">
+                <p><span class="name">홍길동</span>님</p>
+                <p>안녕하세요.</p>
+            </div>
+            <div class="select-spot">
+                <select name="spot">
+                    <option value="">충무로점</option>
+                    <option value="">대학로점</option>
+                </select>
+            </div>
+            <ul class="menu-list">
+                <li class="list-item"><a class="menu" href="">HOME</a></li>
+                <li class="list-item"><a class="menu" href="">공지사항</a></li>
+                <li class="list-item"><a class="menu" href="">자료실</a></li>
+                <li class="list-item depth active">
+                    <span class="menu">정산관리</span>
+                    <ul class="depth-list">
+                        <li class="active"><a href="">정산내역 확인</a></li>
+                        <li><a href="">유상포인트 결제내역</a></li>
+                        <li><a href="">본사 쿠폰 결제내역</a></li>
+                        <li><a href="">고객 클레임 보상내역</a></li>
+                        <li><a href="">기타 정산 내역</a></li>
+                    </ul>
+                </li>
+                <li class="list-item"><a class="menu" href="">기타내역</a></li>
+                <li class="list-item depth"><span class="menu">매출관리</span></li>
+                <li class="list-item depth"><span class="menu">멤버십현황</span></li>
+            </ul>
+            <div class="user-function">
+                <p><a href="">로그아웃</a></p>
+                <p><a href="">비밀번호 변경</a></p>
+            </div>
+        </nav>
+        <section class="container">
+            <header>
+                <div class="page-title calculate">
+                    <p class="present">정산관리</p>
+                    <p class="spot">정산내역 확인</p>
+                </div>    
+            </header>
+            <section class="contents-wrap calculate-wrap">
+                <div class="contents">
+                    <div class="info-wrap">
+                        <p>※ 직전 월 정산내역을 확인 후 [정산확인]을 완료하시면 본사에서 세금계산서를 발행합니다.</p>
+                        <p>※ 당월 5일까지 직전월의 정산확인을 하지 않을 시 자동으로 정산확인 완료 처리됩니다.</p>
+                    </div>
+                    <div class="function-wrap">
+                        <div class="select-wrap">
+                            <select name="" id="">
+                                <option value="">2022-06</option>
+                            </select>
+                            <button class="goast-btn">선택</button>
+                        </div>
+                        <p class="text-info">※ ‘보전’은 본사로부터 보전받을 금액이며, '청구'는 본사가 가맹점에 청구하는 금액을 의미합니다.</p>
+                        <div class="btn-wrap">
+                            <!-- class명 inactive 추가시 비활성화 -->
+                            <button class="btn-check inactive">정산확인</button>
+                            <button class="btn-modify-request inactive">수정요청</button>
+                            <button class="btn-modify-history inactive">수정요청/변경이력</button>
+                        </div>
+                    </div>
+                    <table class="board-wrap" cellpadding="0" cellspacing="0">
+                            <colgroup>
+                                <col width="188">
+                                <col width="70">
+                                <col width="130">
+                                <col width="*">
+                                <col width="130">
+                                <col width="130">
+                                <col width="130">
+                                <col width="130">
+                                <col width="130">
+                                <col width="130">
+                            </colgroup>
+                            <tr>
+                                <th>정산기간</th>
+                                <th>구분</th>
+                                <th>품목</th>
+                                <th>상세내역</th>
+                                <th>수량</th>
+                                <th>단가</th>
+                                <th>공급가액</th>
+                                <th>부가세</th>
+                                <th>합계</th>
+                                <th>비고</th>
+                            </tr>
+                            <tr>
+                                <td class="no-data" rowspan="10" colspan="10">해당 월 정산내역 처리중입니다</td>
+                            </tr>
+                    </table>
+                </div>
+            </section>
+        </section>
+    </article>
+</body>
+</html>

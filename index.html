@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>franchise_admin</title>
+    <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/assets/css/common.css">
+    <script src="/assets/js/common.js"></script>
+</head>
+<body>
+    <article>
+        <nav>
+            <img class="logo" src="/assets/images/common/logo.svg" alt="banapresso">
+            <div class="user">
+                <p><span class="name">홍길동</span>님</p>
+                <p>안녕하세요.</p>
+            </div>
+            <div class="select-spot">
+                <select name="spot">
+                    <option value="">충무로점</option>
+                    <option value="">대학로점</option>
+                </select>
+            </div>
+            <ul class="menu-list">
+                <li class="list-item"><a class="menu active" href="">HOME</a></li>
+                <li class="list-item"><a class="menu" href="">공지사항</a></li>
+                <li class="list-item"><a class="menu" href="">자료실</a></li>
+                <li class="list-item depth">
+                    <span class="menu">정산관리</span>
+                    <ul class="depth-list">
+                        <li><a href="">정산내역 확인</a></li>
+                        <li><a href="">유상포인트 결제내역</a></li>
+                        <li><a href="">본사 쿠폰 결제내역</a></li>
+                        <li><a href="">고객 클레임 보상내역</a></li>
+                        <li><a href="">기타 정산 내역</a></li>
+                    </ul>
+                </li>
+                <li class="list-item"><a class="menu" href="">기타내역</a></li>
+                <li class="list-item depth"><span class="menu">매출관리</span></li>
+                <li class="list-item depth"><span class="menu">멤버십현황</span></li>
+            </ul>
+            <div class="user-function">
+                <p><a href="">로그아웃</a></p>
+                <p><a href="pw_modify.html">비밀번호 변경</a></p>
+            </div>
+        </nav>
+        <section class="container">
+            <header>
+                <div class="page-title home">
+                    <p class="present">HOME</p>
+                    <p class="spot">충무로점</p>
+                </div>    
+            </header>
+            <section class="dashboard">
+                <!-- 공지사항, 자료실, 멤버십 적립현황 -->
+                <div class="board-wrap">
+                    <div class="board notice">
+                        <div class="title-wrap">
+                            <p class="title">공지사항</p>
+                            <p class="btn-more"><a href="">more</a></p>
+                        </div>
+                        <ul class="contents-list">
+                            <li class="list-item">
+                                <p class="state general">일반</p>
+                                <p class="contents">일반 공지사항입니다.</p>
+                                <p class="date">2022/12/31</p>
+                            </li>
+                            <li class="list-item">
+                                <p class="state urgent">긴급</p>
+                                <p class="contents">긴급 시스템 장애 공지입니다.</p>
+                                <p class="date">2022/12/31</p>
+                            </li>
+                            <li class="list-item">
+                                <p class="state education">교육</p>
+                                <p class="contents">직원 교육 안내입니다.</p>
+                                <p class="date">2022/12/31</p>
+                            </li>
+                            <li class="list-item">
+                                <p class="state urgent">긴급</p>
+                                <p class="contents">긴급 시스템 장애 공지입니다.</p>
+                                <p class="date">2022/12/31</p>
+                            </li>
+                            <li class="list-item">
+                                <p class="state general">일반</p>
+                                <p class="contents">직원 교육 안내입니다.</p>
+                                <p class="date">2022/12/31</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="board data">
+                        <div class="title-wrap">
+                            <p class="title">자료실</p>
+                            <p class="btn-more">more</p>
+                        </div>
+                        <ul class="contents-list">
+                            <li class="list-item">
+                                <p class="state recipe">레시피</p>
+                                <p class="contents">일반 공지사항입니다.</p>
+                                <p class="date">2022/12/31</p>
+                            </li>
+                            <li class="list-item">
+                                <p class="state menual">매뉴얼</p>
+                                <p class="contents">긴급 시스템 장애 공지입니다.</p>
+                                <p class="date">2022/12/31</p>
+                            </li>
+                            <li class="list-item">
+                                <p class="state education">교육</p>
+                                <p class="contents">직원 교육 안내입니다.</p>
+                                <p class="date">2022/12/31</p>
+                            </li>
+                            <li class="list-item">
+                                <p class="state guide">가이드</p>
+                                <p class="contents">긴급 시스템 장애 공지입니다.</p>
+                                <p class="date">2022/12/31</p>
+                            </li>
+                            <li class="list-item">
+                                <p class="state recipe">일반</p>
+                                <p class="contents">직원 교육 안내입니다.</p>
+                                <p class="date">2022/12/31</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="board membership">
+                        <div class="title-wrap">
+                            <p class="title">멤버십 적립 현황<span>(누적)</span></p>
+                            <p class="btn-more"><a href="">more</a></p>
+                        </div>
+                        <table class="contents-list" cellpadding="0" cellspacing="0">
+                            <colgroup>
+                                <col width="258">
+                                <col width="125">
+                                <col width="*">
+                            </colgroup>
+                            <tr>
+                                <th>구분</th>
+                                <th>건수</th>
+                                <th>금액</th>
+                            </tr>
+                            <tr>
+                                <td class="sortation">미사용 바나포인트(P)</td>
+                                <td align="right">-</td>
+                                <td align="right">1,000,000P</td>
+                            </tr>
+                            <tr>
+                                <td class="sortation">미사용 무료쿠폰(스탬프적립)</td>
+                                <td align="right">100</td>
+                                <td align="right">2,000,000원</td>
+                            </tr>
+                            <tr>
+                                <td class="sortation">미사용 무료쿠폰(월간랭킹)</td>
+                                <td align="right">100</td>
+                                <td align="right">-</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <!-- Today -->
+                <div class="board-wrap widget-margin">
+                    <div class="board today">
+                        <div class="title-wrap">
+                            <p class="title">Today<span>&nbsp;(총 매출)</span></p>
+                            <p class="btn-more"><a href="">more</a></p>
+                        </div>
+                        <table class="contents-list" cellpadding="0" cellspacing="0">
+                            <colgroup>
+                                <col width="163">
+                                <col width="163">
+                                <col width="163">
+                                <col width="163">
+                                <col width="163">
+                                <col width="163">
+                                <col width="163">
+                                <col width="163">
+                                <col width="163">
+                                <col width="163">
+                            </colgroup>
+                            <tr>
+                                <th rowspan="2">
+                                    총매출<br>
+                                    (부가세 포함)
+                                </th>
+                                <th rowspan="2">
+                                    배달매출<br>
+                                    (부가세 포함)
+                                </th>
+                                <th colspan="5">
+                                    유상매출 (부가세 포함)
+                                </th>
+                                <th colspan="3">무상 서비스 비용</th>
+                            </tr>
+                            <tr>
+                                <td class="sales">합계</td>
+                                <td class="sales">카드결제</td>
+                                <td class="sales">현금결제</td>
+                                <td class="sales">유상포인트결제</td>
+                                <td class="sales">본사쿠폰결제</td>
+                                <td class="service">합계</td>
+                                <td class="service">가맹점쿠폰결제</td>
+                                <td class="service">바나포인트결제</td>
+                            </tr>
+                            <tr>
+                                <td>200,000원</td>
+                                <td>20,000원<span class="percentage">(10%)</span></td>
+                                <td>20,000원<span class="percentage">(97%)</span></td>
+                                <td>20,000원<span class="percentage">(90%)</span></td>
+                                <td>20,000원<span class="percentage">(5%)</span></td>
+                                <td>20,000원<span class="percentage">(1%)</span></td>
+                                <td>20,000원<span class="percentage">(1%)</span></td>
+                                <td>20,000원<span class="percentage">(3%)</span></td>
+                                <td>20,000원<span class="percentage">(2%)</span></td>
+                                <td>20,000원<span class="percentage">(1%)</span></td>
+                            </tr>
+                        </table>
+                        <div class="description">
+                            <p>- 총 매출(자체 앱주문 배달비 포함): 유상매출+무상서비스</p>
+                            <p>- 유상매출과 무상서비스 금액에 자체 앱주문 배달비 포함.</p>
+                            <p>- 배달매출: 앱배달/쿠팡/배민 합계. (앱주문 배달비 포함)</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Week, Month, 월별 발주 금액, 최근 정산 현황-->
+                <div class="board-wrap widget-margin">
+                    <div class="board week-sales">
+                        <div class="title-wrap">
+                            <p class="title">Week<span>(총 매출)</span></p>
+                            <p class="btn-more"><a href="">more</a></p>
+                        </div>
+                        <div class="contents-list chart"></div>
+                        <p class="noti">* 부가세 포함</p>
+                    </div>
+                    <div class="board month-sales">
+                        <div class="title-wrap">
+                            <p class="title">Month<span>(총 매출)</span></p>
+                            <p class="btn-more"><a href="">more</a></p>
+                        </div>
+                        <div class="calender contents-list"></div>
+                        <p class="noti">* 부가세 포함</p>
+                    </div>
+                    <div class="board ordering">
+                        <div class="title-wrap">
+                            <p class="title">월별 발주 금액</p>
+                            <p class="btn-more"><a href="">more</a></p>
+                        </div>
+                        <table class="contents-list" cellpadding="0" cellspacing="0">
+                            <colgroup>
+                                <col width="104">
+                                <col width="151">
+                            </colgroup>
+                            <tr>
+                                <th>월</th>
+                                <th>발주금액</th>
+                            </tr>
+                            <tr>
+                                <td>2022-10</td>
+                                <td>1,000,000</td>
+                            </tr>
+                            <tr>
+                                <td>2022-10</td>
+                                <td>1,000,000</td>
+                            </tr>
+                            <tr>
+                                <td>2022-10</td>
+                                <td>1,000,000</td>
+                            </tr>
+                            <tr>
+                                <td>2022-10</td>
+                                <td>1,000,000</td>
+                            </tr>
+                            <tr>
+                                <td>2022-10</td>
+                                <td>1,000,000</td>
+                            </tr>
+                            <tr>
+                                <td class="last">2022-10</td>
+                                <td class="last">1,000,000</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="board status">
+                        <div class="title-wrap">
+                            <p class="title">최근 정산 현황</p>
+                            <p class="btn-more"><a href="">more</a></p>
+                        </div>
+                        <table class="contents-list" cellpadding="0" cellspacing="0">
+                            <colgroup>
+                                <col width="105">
+                                <col width="105">
+                                <col width="105">
+                                <col width="105">
+                                <col width="105">
+                            </colgroup>
+                            <tr>
+                                <th>정산월</th>
+                                <th>보전금액</th>
+                                <th>청구금액</th>
+                                <th>합계</th>
+                                <th>상태</th>
+                            </tr>
+                            <tr>
+                                <td class="point">2022-10</td>
+                                <td class="point">10,000</td>
+                                <td class="point">20,000</td>
+                                <td class="point point-text">-10,000</td>
+                                <td class="point">미확인</td>
+                            </tr>
+                            <tr>
+                                <td>2022-10</td>
+                                <td>10,000</td>
+                                <td>20,000</td>
+                                <td>-10,000</td>
+                                <td>미확인</td>
+                            </tr>
+                            <tr>
+                                <td>2022-10</td>
+                                <td>10,000</td>
+                                <td>20,000</td>
+                                <td>-10,000</td>
+                                <td>미확인</td>
+                            </tr>
+                            <tr>
+                                <td>2022-10</td>
+                                <td>10,000</td>
+                                <td>20,000</td>
+                                <td>-10,000</td>
+                                <td>미확인</td>
+                            </tr>
+                            <tr>
+                                <td>2022-10</td>
+                                <td>10,000</td>
+                                <td>20,000</td>
+                                <td>-10,000</td>
+                                <td>미확인</td>
+                            </tr>
+                            <tr>
+                                <td class="last">2022-10</td>
+                                <td class="last">10,000</td>
+                                <td class="last">20,000</td>
+                                <td class="last">-10,000</td>
+                                <td class="last">미확인</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </article>
+</body>
+</html>

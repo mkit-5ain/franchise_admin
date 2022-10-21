@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>notice view</title>
+    <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/assets/css/common.css">
+    <script src="/assets/js/menu.js"></script>
+    <script src="/assets/js/tab.js"></script>
+</head>
+<body>
+    <article>
+        <nav>
+            <img class="logo" src="/assets/images/common/logo.svg" alt="banapresso">
+            <div class="user">
+                <p><span class="name">홍길동</span>님</p>
+                <p>안녕하세요.</p>
+            </div>
+            <div class="select-spot">
+                <select name="spot">
+                    <option value="">충무로점</option>
+                    <option value="">대학로점</option>
+                </select>
+            </div>
+            <ul class="menu-list">
+                <li class="list-item"><a class="menu" href="">HOME</a></li>
+                <li class="list-item"><a class="menu active" href="">공지사항</a></li>
+                <li class="list-item"><a class="menu" href="">자료실</a></li>
+                <li class="list-item depth">
+                    <span class="menu">정산관리</span>
+                    <ul class="depth-list">
+                        <li><a href="">정산내역 확인</a></li>
+                        <li><a href="">유상포인트 결제내역</a></li>
+                        <li><a href="">본사 쿠폰 결제내역</a></li>
+                        <li><a href="">고객 클레임 보상내역</a></li>
+                        <li><a href="">기타 정산 내역</a></li>
+                    </ul>
+                </li>
+                <li class="list-item"><a class="menu" href="">기타내역</a></li>
+                <li class="list-item depth"><span class="menu">매출관리</span></li>
+                <li class="list-item depth"><span class="menu">멤버십현황</span></li>
+            </ul>
+            <div class="user-function">
+                <p><a href="">로그아웃</a></p>
+                <p><a href="">비밀번호 변경</a></p>
+            </div>
+        </nav>
+        <section class="container">
+            <header>
+                <div class="page-title notice">
+                    <p class="present">공지사항</p>
+                </div>    
+            </header>
+            <section class="contents-wrap notice-view-wrap">
+                <div class="contents">
+                    <div class="tab-wrap">
+                        <div class="tab active" data-tab="tab1">정산 관련 공지</div>
+                        <div class="tab" data-tab="tab2">일반 공지</div>
+                    </div> 
+                    <div class="tab-content active" id="tab1">
+                        <div class="view-wrap">
+                            <div class="record-wrap">
+                                <p class="sort-state">정산</p>
+                                <p class="date">2022-12-31</p>
+                            </div>
+                            <div class="title-wrap">
+                                <p class="icon-state">긴급</p>
+                                <p class="title">바나프레소 직장 내 성희롱 예방교육 자료</p>
+                            </div>
+                            <div class="content-wrap">
+                                <p>
+                                    안녕하세요.<br>
+                                    바나프레소 카페운영SV팀입니다.<br>
+                                    <br>
+                                    직장 내 성희롱 예방교육 자료 및 예방대응 포스터 공지하오니 첨부파일 확인하시고 내용 숙지 바랍니다.<br>
+                                    이상입니다.
+                                </p>
+                            </div>
+                            <div class="file-wrap">
+                                <p class="file">첨부파일 123.pdf</p>
+                                <p class="file">첨부파일 123.pdf</p>
+                                <p class="file">첨부파일 123.pdf</p>
+                            </div>
+                        </div>
+                        <div class="btn-wrap">
+                            <button class="btn-list-more">목록</button>
+                        </div>
+                    </div>
+                    <div class="tab-content active" id="tab2">2</div>
+                </div>
+            </section>
+        </section>
+    </article>
+</body>
+</html>
